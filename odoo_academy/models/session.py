@@ -28,7 +28,7 @@ class Session(models.Model):
         ('open', 'In Progress'), 
         ('done', 'Done'),
         ('canceled', 'Canceled')],default='draft', required=True)
-    total_price = fields.Float(string="Total price", related='course_id_total_price')
+    total_price = fields.Float(string="Total price", related='course_id.total_price')
     
     @api.depends('start_date', 'end_date')
     def _compute_end_date(self):

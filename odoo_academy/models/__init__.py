@@ -1,5 +1,2 @@
-# -*- config: utf-8 -*-
-
-from . import course
-from . import spaceship
-from . import test
+# -*- coding: utf-8 -*-
+from . import course, session, sale_order, product_template
